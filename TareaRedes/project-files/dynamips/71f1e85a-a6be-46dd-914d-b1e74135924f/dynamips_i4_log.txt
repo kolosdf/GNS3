@@ -1,0 +1,48 @@
+Apr 20 09:21:31.423 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Apr 20 09:21:31.424 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 60780.
+Apr 20 09:21:31.895 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 20 09:21:31.896 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Usuario\Desktop\proyectos de gns3\TareaRedes\project-files\dynamips 
+Apr 20 09:21:31.896 GENERAL: working_dir=C:\Users\Usuario\Desktop\proyectos de gns3\TareaRedes\project-files\dynamips
+Apr 20 09:21:31.896 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Usuario\Desktop\proyectos de gns3\TareaRedes\project-files\dynamips\43f53d92-06f7-4c41-9f99-db87c71dbd47 
+Apr 20 09:21:31.897 GENERAL: working_dir=C:\Users\Usuario\Desktop\proyectos de gns3\TareaRedes\project-files\dynamips\43f53d92-06f7-4c41-9f99-db87c71dbd47
+Apr 20 09:21:31.897 HYPERVISOR: exec_cmd: vm create R3 3 c3725 
+Apr 20 09:21:31.898 VM: VM R3 created.
+Apr 20 09:21:31.898 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5007 
+Apr 20 09:21:31.898 HYPERVISOR: exec_cmd: c3725 get_mac_addr R3 
+Apr 20 09:21:31.899 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Apr 20 09:21:31.899 HYPERVISOR: exec_cmd: vm set_exec_area R3 64 
+Apr 20 09:21:31.899 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 20 09:21:31.899 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x60c09aa0 
+Apr 20 09:21:31.900 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/Usuario/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Apr 20 09:21:31.900 HYPERVISOR: exec_cmd: c3725 set_mac_addr R3 c203.2d3c.0000 
+Apr 20 09:21:31.900 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Apr 20 09:21:31.901 HYPERVISOR: exec_cmd: vm set_ram R3 256 
+Apr 20 09:21:31.901 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 20 09:21:31.901 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-1FE-TX 
+Apr 20 09:21:31.901 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 20 09:21:31.901 HYPERVISOR: exec_cmd: vm slot_add_binding R3 2 0 NM-4T 
+Apr 20 09:21:31.901 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 16 WIC-1T 
+Apr 20 09:21:31.902 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 32 WIC-1T 
+Apr 20 09:21:33.800 HYPERVISOR: exec_cmd: nio create_udp udp-916ac3cf-081e-4fe3-8fc4-f415b9be3529 10018 127.0.0.1 10019 
+Apr 20 09:21:34.004 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-916ac3cf-081e-4fe3-8fc4-f415b9be3529 
+Apr 20 09:21:34.004 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 20 09:21:34.040 HYPERVISOR: exec_cmd: nio create_udp udp-3642b869-3ba4-4f3a-bf3e-e073c8a87c49 10022 127.0.0.1 10023 
+Apr 20 09:21:34.042 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-3642b869-3ba4-4f3a-bf3e-e073c8a87c49 
+Apr 20 09:21:34.043 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 20 09:21:34.507 HYPERVISOR: exec_cmd: nio create_udp udp-bf95c2f0-b80c-4d30-b306-990d1f49db72 10038 127.0.0.1 10039 
+Apr 20 09:21:34.509 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-bf95c2f0-b80c-4d30-b306-990d1f49db72 
+Apr 20 09:21:34.509 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 20 09:26:22.609 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Apr 20 09:26:22.612 VM: VM Ghost created.
+Apr 20 09:26:22.612 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Usuario/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Apr 20 09:26:22.612 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Apr 20 09:26:22.613 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\Usuario\Desktop\proyectos de gns3\TareaRedes\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-256.ghost' 
+Apr 20 09:26:22.613 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 20 09:26:22.613 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg 
+Apr 20 09:26:22.613 HYPERVISOR: exec_cmd: vm start R3 
+Apr 20 09:26:53.011 HYPERVISOR: exec_cmd: vm extract_config R3 
+Apr 20 09:26:53.148 HYPERVISOR: exec_cmd: vm extract_config R3 
+Apr 20 10:07:00.455 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 20 10:07:00.456 HYPERVISOR: exec_cmd: vm stop R3 
+Apr 20 10:07:00.625 VM: VM R3 shutdown.
+Apr 20 10:07:00.625 HYPERVISOR: exec_cmd: vm extract_config R3 
